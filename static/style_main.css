@@ -1,0 +1,558 @@
+/* body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url("main_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 0px 50px;
+  background-color: #174142;
+  background-size: 1536px 630px;
+  page-size:100%;
+  overflow:hidden;
+
+}
+.msg-box{
+  width: 580px;
+  padding: 20px;
+  height:20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 1, 1), 0 6px 20px 0 rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #FFFFFF;
+  text-align: centre;
+  color: black;
+  font-weight:500;
+  font-size: 87%
+
+
+
+
+}
+
+ .Logout input[type = "submit"] {
+  border:0;
+  background: none;
+  color:white;
+  margin: 20px auto;
+  padding:10px 40px;
+  outline: none;
+  position: relative;
+  top: -95px;
+  left :350px;
+  font-size: 20px;
+
+}
+ .Sign-up input[type = "submit"] {
+  border:0;
+  background: none;
+  color:white;
+  margin: 20px auto;
+  padding:10px 40px;
+  outline: none;
+  position: relative;
+  top: -177px;
+  left :500px;
+  font-size: 20px;
+
+}
+ .Produce-Report input[type = "submit"] {
+  border:0;
+  background: none;
+  color:white;
+  margin: 20px auto;
+  padding:10px 40px;
+  outline: none;
+  position: relative;
+  top: -260px;
+  left :650px;
+  font-size: 20px;
+
+}
+ h1{
+  position: relative;
+  color: white;
+  top: -15px;
+  font-weight: 500;
+}
+
+.sympts input[type = "submit"]{
+  position: relative;
+  top: -360px;
+  left: 0px;
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  }
+.sympts input[type = "submit"]:hover{
+  background: #2ecc71;
+  color:black;
+
+
+  }
+.sympts input[type="text"]{
+
+  position: relative ;
+  top: -250px;
+  left: 700px;
+  width: 50px;
+  background: none;
+  text-align: center;
+  padding: 5px;
+  border: 2px solid #2ecc71;
+  border-radius:10px;
+  height:20px;
+  outline : none;
+  }
+.sympts h0{
+  position:relative;
+  top:-100px;
+  color: white;
+  font-size: 30px;
+  padding: 5px;
+  border-radius:5px;
+  text-align: center;
+  text-align: center;
+  background: #26033E;
+  font-weight:100;
+}
+div1 {
+  position : relative;
+  top:-105px;
+  height : 50 px;
+  width : 50px;
+  padding: 3px;
+  margin : 20px auto;
+
+}
+
+.sympts h2{
+  width: 300px;
+  position:relative;
+  top:-160px;
+  left: 500px;
+  color: white;
+  font-size: 25px;
+  padding: 3px;
+  border-radius:5px;
+  text-align: center;
+  background: #26033E;
+  font-weight:100;
+}
+div2 {
+  position : relative;
+  top:-210px;
+  left: 810px;
+  height : 50 px;
+  width : 50px;
+  padding: 3px;
+  margin : 20px auto;
+}
+.sympts h3{
+  width: 150px;
+  position:relative;
+  top:-260px;
+  left: 1070px;
+  color: white;
+  font-size: 25px;
+  padding: 3px;
+  border-radius:5px;
+  text-align: center;
+  background: #26033E;
+  font-weight:100;
+}
+div3 {
+  position : relative;
+  top:-315px;
+  right: -1235px;
+  height : 50 px;
+  width : 50px;
+  padding: 3px;
+  margin : 20px auto;
+}
+
+.sympts h4{
+  width: 150px;
+  position:relative;
+  top:-270px;
+  left: 1070px;
+  color: white;
+  font-size: 25px;
+  padding: 3px;
+  border-radius:5px;
+  text-align: center; 
+  background: #26033E;
+  font-weight:100;
+}
+div4 {
+  position : relative;
+  top:-330px;
+  right: -1235px;
+  height : 50 px;
+  width : 50px;
+  padding: 3px;
+  margin : 20px auto;
+}
+.sympts h5{
+  width: 100px;
+  position:relative;
+  top:-400px;
+  left: 170px;
+  color: white;
+  font-size: 25px;
+  font-weight:100;
+  padding: 3px;
+  border-radius:5px;
+  text-align: center;
+  background: #26033E;
+}
+div5 {
+  position : relative;
+  top:-470px;
+  left: 290px;
+  height : 50 px;
+  width : 50px;
+  padding: 3px;
+  margin : 20px auto;
+}
+.sympts h6{
+  width: 200px;
+  position:relative;
+  top:-552px;
+  left: 600px;
+  color: white;
+  font-size: 25px;
+  padding: 1px;
+  border-radius:5px;
+  font-weight:100;
+  text-align: center;
+  background: #26033E;
+}
+div6 {
+  position : relative;
+  top:-640px;
+  left: 810px;
+  height : 50 px;
+  width : 50px;
+  padding: 3px;
+  margin : 20px auto;
+}
+.sympts h7{
+  width: 300px;
+  position:relative;
+  top:-550px;
+  left: 55px;
+  color: white;
+  font-size: 25px;
+  padding: 3px;
+  border-radius:5px;
+  text-align: center;
+  background: #26033E;
+}
+div7 {
+  position : relative;
+  top:-550px;
+  left: 65px;
+  height : 50 px;
+  width : 50px;
+  padding: 3px;
+  margin : 20px auto;
+}
+.sympts h8{
+  width: 300px;
+  position:relative;
+  top:-550px;
+  left: 270px;
+  color: white;
+  font-size: 25px;
+  padding: 3px;
+  border-radius:5px;
+  text-align: center;
+  background: #26033E;
+}
+div8{
+  position : relative;
+  top:-550px;
+  left: 275px;
+  height : 50 px;
+  width : 50px;
+  padding: 3px;
+  margin : 20px auto;
+}
+.sympts h9{
+  width: 300px;
+  position:relative;
+  top:-550px;
+  left: 340px;
+  color: white;
+  font-size: 25px;
+  padding: 3px;
+  border-radius:5px;
+  text-align: center;
+  background: #26033E;
+}
+div9{
+  position : relative;
+  top:-550px;
+  left: 340px;
+  height : 50 px;
+  width : 50px;
+  padding: 3px;
+  margin : 20px auto;
+}
+.sympts h10{
+  width: 300px;
+  position:relative;
+  top:-470px;
+  right: 860px;
+  color: white;
+  font-size: 25px;
+  padding: 3px;
+  border-radius:5px;
+  text-align: center;
+  background: #26033E;
+}
+div10{
+  position : relative;
+  top:-470px;
+  right: 850px;
+  height : 50 px;
+  width : 50px;
+  padding: 3px;
+  margin : 20px auto;
+}
+.sympts h11{
+  width: 300px;
+  position:relative;
+  top:-470px;
+  right: 90px;
+  color: white;
+  font-size: 25px;
+  padding: 3px;
+  border-radius:5px;
+  text-align: center;
+  background: #26033E;
+}
+div11{
+  position : relative;
+  top:-470px;
+  right: 90px;
+  height : 50 px;
+  width : 50px;
+  padding: 3px;
+  margin : 20px auto;
+}
+.sympts h12{
+  width: 300px;
+  position:relative;
+  top:-499px;
+  left: 650px;
+  color: white;
+  font-size: 25px;
+  padding: 3px;
+  border-radius:5px;
+  text-align: center;
+  background: #26033E;
+}
+div12{
+  position : relative;
+  top:-499px;
+  left : 655px;;
+  height : 50 px;
+  width : 50px;
+  padding: 3px;
+  margin : 20px auto;
+}
+.sympts h13{
+  width: 300px;
+  position:relative;
+  top:-420px;
+  right: 123px;
+  color: white;
+  font-size: 25px;
+  padding: 3px;
+  border-radius:5px;
+  text-align: center;
+  background: #26033E;
+}
+div13{
+  position : relative;
+  top:-420px;
+  right:115px;
+  height : 50 px;
+  width : 50px;
+  padding: 3px;
+  margin : 20px auto;
+}
+.sympts h14{
+  width: 300px;
+  position:relative;
+  top:-420px;
+  left: 240px;
+  color: white;
+  font-size: 25px;
+  padding: 3px;
+  border-radius:5px;
+  text-align: center;
+  background: #26033E;
+}
+div14{
+  position : relative;
+  top:-420px;
+  left :245px;
+  height : 50 px;
+  width : 50px;
+  padding: 3px;
+  margin : 20px auto;
+} */
+
+#leftbox {
+    float: left;
+    background: white;
+    width: 33%;
+    height: 280px;
+    text-align: center;
+    column-gap: 20px;
+}
+
+#middlebox {
+    float: left;
+    background: white;
+    width: 34%;
+    height: 280px;
+    text-align: center;
+    column-gap: 40px;
+}
+
+#rightbox {
+    float: right;
+    background: white;
+    width: 33%;
+    height: 280px;
+    text-align: center;
+    column-gap: 40px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url("main_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px 50px;
+    background-color: #174142;
+    /* background-size: 1536px 630px; */
+    /* page-size: 100%; */
+    /* overflow: hidden; */
+}
+
+.Logout input[type="submit"] {
+    border: 0;
+    background: none;
+    color: white;
+    margin: 20px auto;
+    padding: 10px 40px;
+    outline: none;
+    position: relative;
+    top: -110px;
+    left: 350px;
+    font-size: 20px;
+}
+
+.Sign-up input[type="submit"] {
+    border: 0;
+    background: none;
+    color: white;
+    margin: 20px auto;
+    padding: 10px 40px;
+    outline: none;
+    position: relative;
+    top: -193px;
+    left: 500px;
+    font-size: 20px;
+}
+
+.Produce-Report input[type="submit"] {
+    border: 0;
+    background: none;
+    color: white;
+    margin: 20px auto;
+    padding: 10px 40px;
+    outline: none;
+    position: relative;
+    top: -193px;
+    left: 630px;
+    font-size: 20px;
+}
+
+.sympts input[type="text"] {
+    position: relative;
+    top: -270px;
+    left: 700px;
+    width: 50px;
+    background: none;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid #2ecc71;
+    border-radius: 10px;
+    height: 20px;
+    outline: none;
+}
+
+.sympts input[type="submit"] {
+    position: relative;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    /* color: white; */
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.h2_color {
+    /* width: 500px;
+    position: relative; */
+    color: white;
+    font-size: 25px;
+    /* padding: 3px; */
+    border-radius: 55px;
+    text-align: center;
+    background: #26033E;
+}
+
+.sympts input[type="submit"]:hover {
+    background: #2ecc71;
+    color: black;
+}
+
+.box_test {
+    background-color: lightgrey;
+    border: 15px solid white;
+    text-align: center;
+    /* padding: 50px; */
+    /* margin: 20px; */
+}
+
+.covidheader_header {
+    border: 0;
+    top: -15px;
+    background: none;
+    color: white;
+    margin: 20px auto;
+    outline: none;
+    position: relative;
+}

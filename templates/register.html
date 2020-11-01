@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="#" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Microserver" content="Ultra Lightweight Server" />
+    <meta name="description" content="Welcome" />
+    <meta http-equiv="Cache-control" content="no-cache" />
+    <title>Register</title>
+    <link  href = "{{url_for('static',filename='style_reg.css')}}"  rel="stylesheet">
+</head>
+<body>
+<form class="r-box" method="post" action="/registrations_write">
+    <h1>REGISTRATION</h1>
+    <input type="text" name="r_user" placeholder="Username" >
+    <input type="password" name="r_pass" placeholder="Password" >
+    <input type="password" name="r_pass_c" placeholder="Confirm Password" >
+    <input type="text" name="r_email" placeholder="Email" >
+    <input type="text" name="r_phone" placeholder="Phone Number" >
+    <input type="submit" name="r_submit" placeholder="Submit" value="Submit">
+    <h2>{{pass_match}}</h2>
+</form>
+
+</body>
+</html>

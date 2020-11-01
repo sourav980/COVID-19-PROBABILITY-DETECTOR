@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="#" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Microserver" content="Ultra Lightweight Server" />
+    <meta name="description" content="Welcome" />
+    <meta http-equiv="Cache-control" content="no-cache" />
+    <link
+      href="{{url_for('static',filename='style_main.css')}}"
+      rel="stylesheet"
+    />
+    <title>Covid-19 Detector</title>
+  </head>
+  <body>
+    <div>
+      <form>
+        <h1 class="covidheader_header">Covid-19 Detector</h1>
+    &nbsp;
+      </form>
+
+      <form class="Logout" action="/">
+        <input type="submit" value="Logout" />
+
+     <form class="Sign-up" action="/registrations" method="post">
+        <input type="submit" value="Sign-up" />
+      </form>
+
+      <form class="Produce-Report" action="/producereport" method="post">
+        <input type="submit" value="Produce Report" />
+      </form>
+
+
+
+   <div class="box_test">
+     <p>Select the symptoms you have. If you do not have fever enter normal temperature in degree fahrenheit</p>
+    </div>
+
+
+    <form class="sympts" action="/main" method="post">
+      <input type="text" name="age" placeholder="Age" >
+      <input type="text" name="fever" placeholder="Fever" >
+     <input type="submit" value="Predict" >
+
+
+   <div id="leftbox">
+        <h2 class="h2_color">Body Pain</h2>
+        <div>
+          Yes<input type="radio" value="1" name="bpain" /> Slightly<input
+            type="radio"
+            value="0"
+            name="bpain"
+          />
+          No<input type="radio" value="-1" name="bpain" checked="checked" />
+        </div>
+      </div>
+      <div id="middlebox">
+        <h2 class="h2_color">Difficulity in breathing</h2>
+
+        <div>
+          Yes<input type="radio" value="1" name="breathing" /> Slightly<input
+            type="radio"
+            value="0"
+            name="breathing"
+          />
+          No<input type="radio" value="-1" name="breathing" checked="checked" />
+        </div>
+      </div>
+      <div id="rightbox">
+        <h2 class="h2_color">Chest Pain</h2>
+        <div>
+          Yes<input type="radio" value="1" name="chest" /> No<input
+            type="radio"
+            value="-1"
+            name="chest"
+            checked="checked"
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      <div id="leftbox">
+        <h2 class="h2_color">Comorbidity</h2>
+        <div>
+          Yes<input type="radio" value="1" name="como" /> No<input
+            type="radio"
+            value="-1"
+            name="como"
+            checked="checked"
+          />
+        </div>
+      </div>
+      <div id="middlebox">
+        <div>
+          <h2 class="h2_color">Cough</h2>
+          Yes<input type="radio" value="1" name="cough" /> No<input
+            type="radio"
+            value="-1"
+            name="cough"
+            checked="checked"
+          />
+        </div>
+      </div>
+      <div id="rightbox">
+        <div>
+          <h2 class="h2_color">Running Nose</h2>
+          Yes<input type="radio" value="1" name="rnose" /> No<input
+            type="radio"
+            value="-1"
+            name="rnose"
+            checked="checked"
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      <div id="leftbox">
+        <div>
+          <h2 class="h2_color">Tiredness</h2>
+          Yes<input type="radio" value="1" name="tired" /> No<input
+            type="radio"
+            value="-1"
+            name="tired"
+            checked="checked"
+          />
+        </div>
+      </div>
+      <div id="middlebox">
+        <div>
+          <h2 class="h2_color">Blurring of speech</h2>
+          Yes<input type="radio" value="1" name="blurrsp" /> No<input
+            type="radio"
+            value="-1"
+            name="blurrsp"
+            checked="checked"
+          />
+        </div>
+      </div>
+      <div id="rightbox">
+        <div>
+          <h2 class="h2_color">Loss of taste or Smell</h2>
+          Yes<input type="radio" value="1" name="tastesm" /> No<input
+            type="radio"
+            value="-1"
+            name="tastesm"
+            checked="checked"
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      <div id="leftbox">
+        <div>
+          <h2 class="h2_color">pneumonia</h2>
+          Yes<input type="radio" value="1" name="pneumonia" /> No<input
+            type="radio"
+            value="-1"
+            name="pneumonia"
+            checked="checked"
+          />
+        </div>
+      </div>
+      <div id= "middlebox">
+        <div>
+          <h2 class="h2_color">Sore Throat</h2>
+          Yes<input type="radio" value="1" name="sore" /> No<input
+            type="radio"
+            value="-1"
+            name="sore"
+            checked="checked"
+          />
+        </div>
+      </div>
+      <div id="rightbox">
+        <div>
+          <h2 class="h2_color">Diarrhea</h2>
+          Yes<input type="radio" value="1" name="dia" /> No<input
+            type="radio"
+            value="-1"
+            name="dia"
+            checked="checked"
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      <div id="leftbox">
+        <div>
+          <h2 class="h2_color">Conjunctivitis</h2>
+          Yes<input type="radio" value="1" name="conj" /> No<input
+            type="radio"
+            value="-1"
+            name="conj"
+            checked="checked"
+          />
+        </div>
+      </div>
+      <div id="middlebox">
+        <div>
+          <h2 class="h2_color">Headache</h2>
+          Yes<input type="radio" value="1" name="head" /> No<input
+            type="radio"
+            value="-1"
+            name="head"
+            checked="checked"
+          />
+        </div>
+      </div>
+      <div id="rightbox">
+        <div>
+          <h2 class="h2_color">Rash</h2>
+          Yes<input type="radio" value="1" name="rash" /> No<input
+            type="radio"
+            value="-1"
+            name="rash"
+            checked="checked"
+          />
+        </div>
+      </div>
+        </form>
+    </div>
+    
+  </body>
+</html>
+
+
+
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="shortcut icon" href="#" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Microserver" content="Ultra Lightweight Server" />
+    <meta name="description" content="Welcome" />
+    <meta http-equiv="Cache-control" content="no-cache" />
+    <title> Login Form</title>
+    <link  href = "{{url_for('static',filename='style.css')}}"  rel="stylesheet">
+  </head>
+  <body>
+
+<form class="box" action="/login" method="post" >
+  <h1>Login</h1>
+  <input type="text" name="user" placeholder="Email" id="user">
+  <input type="password" name="pass" placeholder="Password" id="pass" >
+  <input type="submit" name="" value="Login">
+  <input type="checkbox" onclick="myFunction()"><h7>Show Password</h7>
+  <script>
+ function myFunction() {
+ var x = document.getElementById("pass");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+ }
+  </script>
+  <h2>{{info}}</h2>
+
+</form>
+<form class="regis-box" action="/registrations" method="post">
+  <input type="submit" name="" value="Register" id="regi">
+</form>
+
+</form>
+<form class="forget-box" action="/forgot_render" method="post">
+  <input type="submit" name="" value="Forgot Password" >
+</form>
+
+  </body>
+</html>

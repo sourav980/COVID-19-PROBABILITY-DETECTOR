@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="#" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Microserver" content="Ultra Lightweight Server" />
+    <meta name="description" content="Welcome" />
+    <meta http-equiv="Cache-control" content="no-cache" />
+    <title>Confirmation Code</title>
+    <link
+      href="{{url_for('static',filename='style_code.css')}}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form class="code-box" action="/check_code" method="post">
+      <input type="text" name="code" placeholder="Type code here" />
+      <input type="submit" value="Submit" />
+      <h2>{{info}}</h2>
+    </form>
+    <div class="text-box">
+      Note:Please enter the verification code sent to your mail address
+    </div>
+  </body>
+</html>

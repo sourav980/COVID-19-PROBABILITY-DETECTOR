@@ -1,0 +1,90 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url("e_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 1536px 755px;
+}
+.mail-box{
+  width: 300px;
+  padding: 20px;
+  border-radius:25px;
+  height:200px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #191919;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 1, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.mail-box input[type = "text"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #F22003;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.mail-box input[type = "text"]:focus{
+  width: 250px;
+  border-color: #0016FF;
+}
+
+.mail-box input[type="submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+
+
+}
+.mail-box input[type = "submit"]:hover{
+  background: #2ecc71;
+}
+.mail-box h1{
+  position:relative;
+  top:0px;
+  color: white;
+  text-transform: uppercase;
+  position:relative;
+  top:0px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 150%
+
+}
+.info-box {
+  width: 250px;
+  padding: 20px;
+  height:50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 1, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 69%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #FFFFFF;
+  text-align: centre;
+  color: red;
+  font-weight:100%;
+  font-size: 87%
+
+}
+

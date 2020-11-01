@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    	<link  href = "{{url_for('static',filename='style_report.css')}}"  rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Report</title>
+</head>
+<body>
+ <div1>Date</div1>
+ <div2>Symptoms</div2>
+<table class="report-data">
+    {%for row in sympts%}
+    <tr class="row">
+        {%for cell in row%}
+        <td class="cell">
+            {{cell}}
+        </td>
+        {%endfor%}
+    </tr>
+    {%endfor%}
+
+</table>
+</body>
+</html>

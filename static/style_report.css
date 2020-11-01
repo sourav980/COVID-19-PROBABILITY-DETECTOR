@@ -1,0 +1,39 @@
+.report-data {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div1 {
+    position: relative;
+    top: 200px;
+    left: 465px;
+    width: 100px;
+    text-align: centre;
+    font-size: 30px;
+    text-align: left;
+    padding: 8px;
+    background: #64C76C;
+}
+
+div2 {
+    position: relative;
+    top: 200px;
+    left: 600px;
+    width: 500;
+    font-size: 30px;
+    text-align: centre;
+    padding: 8px;
+    background: #64C76C;
+}
+
+.report-data {
+    margin: 50 px auto;
+}
+
+.cell {
+    text-align: left;
+    padding: 8px;
+    background: #D5D6C7;
+}
