@@ -1,6 +1,6 @@
 # COVID-19 PROBABILITY DETECTOR
 
-Assessment of probability of Covid-19 of a person based on his symptoms using machine learning approach.
+Assessment of user for Covid-19 based on symptoms using Machine Learning approach.
 
 ## Getting Started
 
@@ -15,12 +15,13 @@ Assessment of probability of Covid-19 of a person based on his symptoms using ma
 - If the user forgets his password he can click on forgot password and is redirected to the forgot password verification page.
 
 #### FORGOT PASSWORD PAGE
-- The user must enter the email to recieve the Generated OTP code. The page gets redirected to a new page where user can enter the new password.
+- The user enters the registered email to recieve the Generated OTP code. 
+- The user is then redirected to a new page where user can enter the new password.
 
 #### REGISTER PAGE
 - User must enter valid email, username, password and phone number(optional).
 
-#### MAIN UI PAGE
+#### MAIN PAGE
 - The user enters the symptoms experienced and gets a probability data of being infected.
    
 #### REPORT PAGE 
