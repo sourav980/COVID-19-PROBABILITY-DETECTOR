@@ -1,8 +1,8 @@
 # COVID-19 PROBABILITY DETECTOR
 
-Application having details, functionality and information for COVID-19 PROBABILITY DETECTOR.
+INFORMATION ABOUT  COVID-19 PROBABILITY DETECTOR.
 
--ASSESSMENT OF PROBABILITY OF COVID-19 OF A PERSON BASED ON HIS SYMPTOMS USING MACHINE LEARNING .
+-ASSESSMENT OF PROBABILITY OF COVID-19 OF A PERSON BASED ON HIS SYMPTOMS USING MACHINE LEARNING 
 
 
 ## Getting Started
@@ -17,7 +17,7 @@ Application having details, functionality and information for COVID-19 PROBABILI
 
 ### LOGIN PAGE
 --1)User enters his email and password then page is redirected to the Main UI page
---2)If the user forgets his password he can click on forgot password page and the page gets redirected to forgot password verification page
+--2)If the user forgets his password he can click on forgot password page and the page gets redirected to the forgot password verification page
 
 #### FORGOT PASSWORD PAGE
  --1)The user must enter the email to recieve the Generated OTP code from python
@@ -25,16 +25,16 @@ Application having details, functionality and information for COVID-19 PROBABILI
 
 
 ### REGISTER PAGE
---1)User must enter valid email,his username,password and phone number is optional.If the mail or password is not correct then it will be dispalyed invalid email_id or invalid password 
+--1)User must enter valid email,his username,password and phone number(optional).If the mail or password is not correct then it will be dispalyed invalid email_id or invalid password 
   2)The data entered from user is stored in the database
 
 #### MAIN UI PAGE
    --1)On this page the user enters the symptoms he experiences and when he clicks on the submit button the page gets redirected to a new webpage where probability of 
-       that person havinf covid-19 is shown
+       that person having covid-19 is shown
    --2)He also have an option to click on report button,logout,signup page
    
 ### REPORT PAGE 
-  --1)THE report page displays all the reports he have generated from day 1 on the app basically it is a history of his symptoms report
+  --1)The report page displays all the reports the user  have generated from day 1 on the app,basically it is a history of all his reports
 
 
 
@@ -53,6 +53,6 @@ To install application:
 ### Execution
  For executing the application.
  1)pipenv run python mytraining.py
-`2)pipenv run python login_page.py
+2)pipenv run python login_page.py
   Note:mytraining.py must be executed before running login_page.py
 
