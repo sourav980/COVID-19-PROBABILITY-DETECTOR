@@ -200,8 +200,7 @@ def send_code():
         with smtplib.SMTP(host='smtp.gmail.com', port=25) as smtp :
             smtp.ehlo()
             smtp.starttls()
-            smtp.login("souravpai123rockon@gmail.com",
-                       "")  # enter your mail id and password removed due to securrity reasons)
+            smtp.login("#enter your mail here ",'#enter your email password here' )  # enter your mail id and password removed due to securrity reasons)
             smtp.send_message(message)
             print('mail succesfully sent...')
             return render_template("code.html")
