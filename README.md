@@ -8,6 +8,8 @@ Assessment of user for Covid-19 based on symptoms using Machine Learning approac
 
 - Python version above 3.0
 - Python pip
+- Please enable the less secure app access on your Gmail
+- Please do enter your mail id and email-password in line no 203 in login_page.py file
 
 ### Summary
 #### LOGIN PAGE
@@ -43,6 +45,6 @@ To install application:
 For executing the application.
 
 #### Note: mytraining.py must be executed before running login_page.py
-
+ 
 - `pipenv run python mytraining.py`
 - `pipenv run python login_page.py`
