@@ -1,42 +1,30 @@
 # COVID-19 PROBABILITY DETECTOR
 
-INFORMATION ABOUT  COVID-19 PROBABILITY DETECTOR.
-
--ASSESSMENT OF PROBABILITY OF COVID-19 OF A PERSON BASED ON HIS SYMPTOMS USING MACHINE LEARNING 
-
+Assessment of probability of Covid-19 of a person based on his symptoms using machine learning approach.
 
 ## Getting Started
 
 ### Prerequisites
 
 - Python version above 3.0
-- Python pipenv 
 - Python pip
 
-
-
-### LOGIN PAGE
---1)User enters his email and password then page is redirected to the Main UI page
---2)If the user forgets his password he can click on forgot password page and the page gets redirected to the forgot password verification page
+### Summary
+#### LOGIN PAGE
+- User enters his email and password and is redirected to the Main page.
+- If the user forgets his password he can click on forgot password and is redirected to the forgot password verification page.
 
 #### FORGOT PASSWORD PAGE
- --1)The user must enter the email to recieve the Generated OTP code from python
-   2)Once he enters the code the page gets redirected to a new page where he can enter his new password and it get saved in the database
+- The user must enter the email to recieve the Generated OTP code. The page gets redirected to a new page where user can enter the new password.
 
-
-### REGISTER PAGE
---1)User must enter valid email,his username,password and phone number(optional).If the mail or password is not correct then it will be dispalyed invalid email_id or invalid password 
-  2)The data entered from user is stored in the database
+#### REGISTER PAGE
+- User must enter valid email, username, password and phone number(optional).
 
 #### MAIN UI PAGE
-   --1)On this page the user enters the symptoms he experiences and when he clicks on the submit button the page gets redirected to a new webpage where probability of 
-       that person having covid-19 is shown
-   --2)He also have an option to click on report button,logout,signup page
+- The user enters the symptoms experienced and gets a probability data of being infected.
    
-### REPORT PAGE 
-  --1)The report page displays all the reports the user  have generated from day 1 on the app,basically it is a history of all his reports
-
-
+#### REPORT PAGE 
+- Provides user with feature of producing historical report.
 
 ### Installation
 
@@ -44,15 +32,16 @@ To install application:
 
 1. Clone the repository.
 
-   'git clone https://github.com/sourav980/COVID-19-PROBABILITY-DETECTOR.git'
+   `git clone https://github.com/sourav980/COVID-19-PROBABILITY-DETECTOR.git`
 
 2. Install pipenv for creating virtual environments.
 
    `pip install pipenv`
 
 ### Execution
- For executing the application.
- 1)pipenv run python mytraining.py
-2)pipenv run python login_page.py
-  Note:mytraining.py must be executed before running login_page.py
+For executing the application.
 
+#### Note: mytraining.py must be executed before running login_page.py
+
+- `pipenv run python mytraining.py`
+- `pipenv run python login_page.py`
