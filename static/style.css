@@ -1,129 +1,135 @@
-body{
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background-image: url("l_bg.jpg");
-  background-repeat: no-repeat;
-  background-size: 1536px 755px;
-}
-.box{
-  width: 300px;
-  padding: 40px;
-  border-radius:25px;
-  height:350px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background: #191919;
-  text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 1, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-}
-.box h1{
-  color: white;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.box input[type = "text"],.box input[type = "password"]{
-  border:0;
-  background: none;
-  display: block;
-  margin: 20px auto;
-  text-align: center;
-  border: 2px solid #3498db;
-  padding: 14px 10px;
-  width: 200px;
-  outline: none;
-  color: white;
-  border-radius: 24px;
-  transition: 0.25s;
-
-}
-.box input[type = "text"]:hover,.box input[type = "password"]:hover{
-  width: 250px;
-  border-color: #2ecc71;
-}
-.box input[type = "submit"]{
-  border:0;
-  background: none;
-  display: block;
-  margin: 20px auto;
-  text-align: center;
-  border: 2px solid #2ecc71;
-  padding: 14px 40px;
-  outline: none;
-  color: white;
-  border-radius: 24px;
-  transition: 0.25s;
-  cursor: pointer;
-}
-.box input[type = "submit"]:hover{
-  background: #2ecc71;
-}
- .regis-box input[type="submit"]{
-  position:absolute;
-  top: 71%;
-  left: 50%;
-  transform: translate(-50%,-71%);
-  border:0;
-  background: none;
-  display: block;
-  margin: 20px auto;
-  text-align: center;
-  border: 2px solid #FF0000;
-  padding: 14px 140px;
-  outline: none;
-  color: white;
-  border-radius: 24px;
-
-
-  transition: 0.25s;
-  cursor: pointer;
-  }
-.regis-box input[type = "submit"]:hover{
-  background: #FF0000;
-}
-.box h2{
-  position:relative;
-  top:0px;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 500;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url("l_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 1536px 755px;
 }
 
-.forget-box input[type = "submit"]{
-  position:absolute;
-  top:50%;
-  right:51%;
-  border:0;
-  background: none;
-  display: block;
-  margin: 20px auto;
-  text-align: center;
-  border: 0px solid #FFFFFF;
-  padding: 2px 2px;
-  outline: none;
-  color: white;
-  border-radius: 24px;
-  transition: 0.25s;
-  cursor: pointer;
+.box {
+    width: 300px;
+    padding: 40px;
+    border-radius: 25px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 1, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
-.box h7{
-  position:absolute;
-  top:55%;
-  left:60%;
-  color:white;
-  font-size: 87%
 
-
+.box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
 }
-.box input[type="checkbox"]{
-  position:absolute;
-  top:54.65%;
-  right:40%;
 
-  color:white;
-  background-color: #FFFFFF;
-  font-size : 100px;
+.box input[type="text"],
+.box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
 
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    width: 250px;
+    border-color: #2ecc71;
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+    background: #2ecc71;
+}
+
+.regis-box input[type="submit"] {
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, -71%);
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #FF0000;
+    padding: 14px 140px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.regis-box input[type="submit"]:hover {
+    background: #FF0000;
+}
+
+.box h2 {
+    position: relative;
+    top: 0px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.forget-box input[type="submit"] {
+    position: absolute;
+    top: 50%;
+    right: 51%;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 0px solid #FFFFFF;
+    padding: 2px 2px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box h7 {
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    color: white;
+    font-size: 87%
+}
+
+.box input[type="checkbox"] {
+    position: absolute;
+    top: 54.65%;
+    right: 40%;
+    color: white;
+    background-color: #FFFFFF;
+    font-size: 100px;
 }

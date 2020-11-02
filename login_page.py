@@ -30,6 +30,7 @@ mail_feed=["default"] # email id to feed to symptoms db
 db_feed_sympt=[]
 vals=[] #to feed to the ML model[-1,0,1....] - age n fever
 report_dict={}#stores the date and the list of symtopms "date"= [list of symptoms ]
+dates=[]
 
 
 #}
@@ -57,7 +58,7 @@ def getsympts():
     # print(db_feed_sympt)
 def db_feed():
     print('entered get data db_feed')
-    feed=symptoms_data(Symptoms=("#".join(db_feed_sympt)),Date=date,Time=time,mail_id=data(Email=mail_feed[0]))
+    feed=symptoms_data(Symptoms=("#".join(db_feed_sympt)),Date=date,Time=time,Email=mail_feed[0])
     db.session.add(feed)
     db.session.commit()
     print("Uploaded to symptoms table")
@@ -66,7 +67,9 @@ def db_feed():
 def get_data(lst):
     print('entered get data')
     for i in lst:
-        report_dict[i.Date]=(i.Symptoms).split("#")
+        report_dict[i.Time]=(i.Symptoms).split("#")
+        dates.append(i.Date)
+    return (report_dict)    
     
     return (report_dict)
 
@@ -93,7 +96,7 @@ class data(db.Model) : # table for login data
     Username = db.Column(db.String(255))
     Password = db.Column(db.String(255))
     Mobile = db.Column(db.BIGINT)
-    problems=db.relationship("symptoms_data",backref="mail_id")
+    #problems=db.relationship("symptoms_data",backref="mail_id")
 
 
 class symptoms_data(db.Model) : # table for login data
@@ -101,7 +104,7 @@ class symptoms_data(db.Model) : # table for login data
     Symptoms = db.Column(db.String(255))
     Date = db.Column(db.String(255),primary_key=True)
     Time = db.Column(db.String(255),primary_key=True)
-    Email=db.Column(db.String(255),db.ForeignKey('data.Email'))
+    Email=db.Column(db.String(255),primary_key=True)
 
 
 
@@ -117,20 +120,23 @@ def login_main():
 def login():
     global umail
     umail=request.form['user']
-    mail_feed[0]=umail
-    psw=request.form['pass']
-    record=data.query.filter_by(Email=umail).all()
-    if record==[]:
-        return render_template('login_school.html', info="No User Found")
-    else:
-        print(record)
-        pass_check=record[0].Password
-        if psw == pass_check:
-            dis_name[0] = (data.query.filter_by(Email=umail).all())[0].Username
-            return redirect(url_for("main_app"))
+    if umail!="":
+        mail_feed[0]=umail
+        psw=request.form['pass']
+        record=data.query.filter_by(Email=umail).all()
+        if record==[]:
+            return render_template('login_school.html', info="No User Found")
         else:
-            print("wrong")
-            return render_template('login_school.html', info="Incorrect password")
+            print(record)
+            pass_check=record[0].Password
+            if psw == pass_check:
+                dis_name[0] = (data.query.filter_by(Email=umail).all())[0].Username
+                return redirect(url_for("main_app"))
+            else:
+                print("wrong")
+                return render_template('login_school.html', info="Incorrect password")
+    else:
+        return render_template('login_school.html',info='Enter ewmail')            
 
 @app.route('/registrations',methods=["POST","GET"])
 def register_startup():
@@ -252,15 +258,17 @@ def main_app():
             valueof = request.form
             age = int(valueof["age"])
             fever = float(valueof["fever"])
+            ml_feed.clear()
             ml_feed.append(age)
             ml_feed.append(fever)
             varis = ["bpain", "breathing", "chest", "como", "cough", "rnose", "tired", "blurrsp", "tastesm",'pneumonia', "sore","dia", "conj","head","rash"]
+            vals.clear()
             values = getvalues(varis)
             print(f"""values: {values} """)
             for i in values:
                     ml_feed.append(int(i))
             print(f"""ml_feed {ml_feed} """)
-           
+            db_feed_sympt.clear()
             getsympts()
             db_feed()
             
@@ -283,12 +291,12 @@ def main_app():
 
 @app.route("/producereport",methods=["GET","POST"])
 def produce_report():
-    report_data=(data.query.filter_by(Email=mail_feed[0])).all()
-    json_feed_list=get_data((report_data[0].problems))
+    report_data=(symptoms_data.query.filter_by(Email=mail_feed[0])).all()
+    json_feed_list=get_data((report_data))
     print(json_feed_list)
-    dates=list(json_feed_list.keys())
+    
     symptoms=list(json_feed_list.values())
-    for i in range(len(dates)):
+    for i in range(len(symptoms)):
         symptoms[i]=[dates[i]]+symptoms[i]
     print(symptoms)
     # print((report_data[0].person))
